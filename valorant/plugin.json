@@ -1,0 +1,24 @@
+{
+  "id": "valorant",
+  "name": "Valorant",
+  "version": "1.0.0",
+  "author": "rockslol",
+  "description": "Rank, RR, matches and rounds, the store with a wishlist, a Tab panel in matches and quieter Spotify while you play. Reads the Riot Client on this PC.",
+  "api": 1,
+  "min_app": "0.10.0",
+  "icon": "icon.svg",
+  "homepage": "https://github.com/rockslol/wavelog-plugins",
+  "uses": {
+    "network": ["valorant-api.com", "Riot's game servers (*.a.pvp.net)", "the Riot Client on this PC"],
+    "files": ["%LOCALAPPDATA%\\Riot Games", "%LOCALAPPDATA%\\VALORANT"],
+    "plays": true,
+    "overlay": true,
+    "ducking": true
+  },
+  "settings": [
+    { "key": "tab_panel", "type": "switch", "label": "Tab panel", "hint": "Hold Tab in a match for today, this map, this agent and your last match. Needs Windowed Fullscreen", "default": true },
+    { "key": "tab_y", "type": "slider", "label": "Tab panel height", "hint": "How far down the screen it sits. Raise it for Skirmish, lower it for 5v5", "default": 0.7, "min": 0.3, "max": 0.9, "step": 0.05 },
+    { "key": "match_alert", "type": "switch", "label": "Match result alert", "hint": "Win or loss, score and RR in the notch right after a match", "default": true },
+    { "key": "store_alert", "type": "switch", "label": "Wishlist alert", "hint": "The notch tells you when a skin on your wishlist is in your store", "default": true }
+  ]
+}

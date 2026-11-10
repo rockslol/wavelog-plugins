@@ -1,0 +1,17 @@
+{
+  "id": "today",
+  "name": "Today",
+  "version": "1.0.0",
+  "author": "rockslol",
+  "description": "Today's listening on one page. Also the example to copy when you make your own plugin.",
+  "api": 1,
+  "min_app": "0.10.0",
+  "icon": "icon.svg",
+  "uses": { "plays": true },
+  "settings": [
+    { "key": "covers", "type": "switch", "label": "Covers grid", "hint": "Show today's albums as a grid you can heart", "default": true },
+    { "key": "chart", "type": "choice", "label": "Chart", "options": [["hour", "By hour"], ["none", "Off"]], "default": "hour" },
+    { "key": "goal", "type": "number", "label": "Daily goal in minutes", "default": 60, "min": 1, "max": 1440 },
+    { "key": "greeting", "type": "text", "label": "Greeting", "placeholder": "Shown at the top", "default": "" }
+  ]
+}
