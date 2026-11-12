@@ -1,0 +1,52 @@
+{
+  "registry": 1,
+  "plugins": [
+    {
+      "id": "today",
+      "name": "Today",
+      "author": "rockslol",
+      "description": "Today's listening on one page. Also the example to copy when you make your own plugin.",
+      "version": "1.0.0",
+      "api": 1,
+      "min_app": "0.10.0",
+      "uses": {
+        "plays": true
+      },
+      "url": "https://github.com/rockslol/wavelog-plugins/releases/download/today-1.0.0/today-1.0.0.zip",
+      "sha256": "64e6e7aac24599edff3c21fbc8beba137af5a58c0c9b329ff7281f0650081e79",
+      "size": 6748,
+      "source": "https://github.com/rockslol/wavelog-plugins/tree/main/today",
+      "icon": "https://raw.githubusercontent.com/rockslol/wavelog-plugins/main/today/icon.svg",
+      "official": true
+    },
+    {
+      "id": "valorant",
+      "name": "Valorant",
+      "author": "rockslol",
+      "description": "Rank, RR, matches and rounds, the store with a wishlist, a Tab panel in matches and quieter Spotify while you play. Reads the Riot Client on this PC.",
+      "version": "1.0.0",
+      "api": 1,
+      "min_app": "0.10.0",
+      "uses": {
+        "network": [
+          "valorant-api.com",
+          "Riot's game servers (*.a.pvp.net)",
+          "the Riot Client on this PC"
+        ],
+        "files": [
+          "%LOCALAPPDATA%\\Riot Games",
+          "%LOCALAPPDATA%\\VALORANT"
+        ],
+        "plays": true,
+        "overlay": true,
+        "ducking": true
+      },
+      "url": "https://github.com/rockslol/wavelog-plugins/releases/download/valorant-1.0.0/valorant-1.0.0.zip",
+      "sha256": "9b018ee36aa54033f66243cfa2537e38ccb4a4ba3f91dbca941b3d3db0eb3c49",
+      "size": 32888,
+      "source": "https://github.com/rockslol/wavelog-plugins/tree/main/valorant",
+      "icon": "https://raw.githubusercontent.com/rockslol/wavelog-plugins/main/valorant/icon.svg",
+      "official": true
+    }
+  ]
+}
